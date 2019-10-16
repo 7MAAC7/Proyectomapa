@@ -59,10 +59,10 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback {
         USet.setZoomControlsEnabled(true);
         // Add a marker in Sydney and move the camera
         LatLng Chile = new LatLng(-30.604494, -72.2047422);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marcador de Chile").
+        mMap.addMarker(new MarkerOptions().position(Chile).title("Marcador de Chile").
                 icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
 
         float zoomnivel = 16;
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(Chile));
     }
 }
